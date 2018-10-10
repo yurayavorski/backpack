@@ -20,39 +20,43 @@
 
 import { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { Platform, StyleSheet, type StyleObj } from 'react-native';
+import { deprecate } from 'react-is-deprecated';
+import { StyleSheet, type StyleObj } from 'react-native';
 
-export const TEXT_STYLES = ['xs', 'sm', 'base', 'lg', 'xl', 'xxl'];
-export type TextStyle = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | 'xxl';
+const emphasizePropType = deprecate(
+  PropTypes.bool,
+  'The `emphasize` prop is deprectiated. Please use the `weight` prop instead.',
+);
+
+export const TEXT_STYLES = [
+  'caps',
+  'xs',
+  'sm',
+  'base',
+  'lg',
+  'xl',
+  'xxl',
+  'xxxl',
+];
+export type TextStyle =
+  | 'caps'
+  | 'xs'
+  | 'sm'
+  | 'base'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'xxxl';
+
+export const WEIGHT_STYLES = ['regular', 'emphasized', 'heavy'];
+export type Weight = 'regular' | 'emphasized' | 'heavy';
 
 export type Props = {
   children: Node,
   textStyle: TextStyle,
+  weight: Weight,
   emphasize: boolean,
   style: ?StyleObj,
-};
-
-export const emphasizePropType = (
-  props: Props,
-  propName: string,
-  componentName: string,
-) => {
-  const value = props[propName];
-  if (typeof value !== 'boolean') {
-    return new Error(
-      `Invalid prop \`${propName}\` of type \`${typeof value}\` supplied to \`${componentName}\`, expected \`boolean\`.`,
-    ); // eslint-disable-line max-len
-  }
-
-  const enabled = !!value;
-
-  if (Platform.OS === 'ios' && (enabled && props.textStyle === 'xxl')) {
-    return new Error(
-      `Invalid prop \`${propName}\` of value \`${value}\` supplied to \`${componentName}\`. On iOS, \`textStyle\` value of \`xxl\` cannot be emphasized.`,
-    ); // eslint-disable-line max-len
-  }
-
-  return false;
 };
 
 export const stylePropType = (
@@ -78,12 +82,14 @@ export const stylePropType = (
 export const propTypes = {
   children: PropTypes.node.isRequired,
   textStyle: PropTypes.oneOf(TEXT_STYLES),
+  weight: PropTypes.oneOf(WEIGHT_STYLES),
   emphasize: emphasizePropType,
   style: stylePropType,
 };
 
 export const defaultProps = {
   textStyle: 'base',
+  weight: WEIGHT_STYLES.regular,
   emphasize: false,
   style: null,
 };
