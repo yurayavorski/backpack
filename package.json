@@ -145,7 +145,7 @@
     "rimraf": "^2.5.4",
     "sass-loader": "^7.1.0",
     "sassdoc": "^2.5.0",
-    "semver": "^5.5.1",
+    "semver": "^5.6.0",
     "static-site-generator-webpack-plugin": "github:skyscanner/static-site-generator-webpack-plugin#7bac616",
     "style-loader": "^0.22.1",
     "stylelint": "^9.6.0",
