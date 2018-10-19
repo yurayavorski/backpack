@@ -20,7 +20,7 @@
 export const animationDurationBase = 400;
 export const animationDurationSm = 200;
 export const animationDurationXs = 50;
-export const borderRadiusPill = 40;
+export const borderRadiusPill = 30;
 export const borderRadiusSm = 4;
 export const borderSizeLg = 2;
 export const borderSizeSm = 1;
@@ -95,7 +95,7 @@ export const colorYellow600 = "rgb(240, 176, 0)";
 export const colorYellow700 = "rgb(225, 165, 0)";
 export const colorYellow800 = "rgb(194, 142, 0)";
 export const colorYellow900 = "rgb(156, 114, 0)";
-export const fontFamily = "System";
+export const fontFamily = "Gilroy";
 export const fontSizeBase = 15;
 export const fontSizeLg = 17;
 export const fontSizeSm = 13;

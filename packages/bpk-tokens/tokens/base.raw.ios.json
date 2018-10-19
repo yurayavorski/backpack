@@ -40,7 +40,7 @@
       "value": "#005567"
     },
     "BORDER_RADIUS_PILL": {
-      "value": 40
+      "value": 30
     },
     "BORDER_RADIUS_SM": {
       "value": 4
@@ -64,7 +64,7 @@
       "value": 2
     },
     "FONT_FAMILY": {
-      "value": "\"System\""
+      "value": "\"Gilroy\""
     },
     "FONT_SIZE_BASE": {
       "value": 15
@@ -313,7 +313,7 @@
     },
     "BORDER_RADIUS_PILL": {
       "type": "size",
-      "value": "40",
+      "value": "30",
       "category": "radii",
       "originalValue": "{!BORDER_RADIUS_PILL}",
       "name": "BORDER_RADIUS_PILL"
@@ -837,7 +837,7 @@
       "name": "COLOR_YELLOW_900"
     },
     "FONT_FAMILY": {
-      "value": "\"System\"",
+      "value": "\"Gilroy\"",
       "type": "font",
       "category": "typesettings",
       "originalValue": "{!FONT_FAMILY}",

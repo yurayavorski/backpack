@@ -15,7 +15,8 @@
   },
   "rnpm": {
     "assets": [
-      "../packages/bpk-svgs/dist/font/"
+      "../packages/bpk-svgs/dist/font/",
+      "/fonts/"
     ]
   },
   "devDependencies": {

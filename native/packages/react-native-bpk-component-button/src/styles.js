@@ -20,9 +20,11 @@
 
 import {
   colorWhite,
+  colorBlue50,
+  colorBlue100,
   colorGray100,
   colorGray300,
-  colorBlue500,
+  colorBlue700,
   colorRed500,
   colorGreen600,
   colorGreen500,
@@ -62,13 +64,13 @@ const base = StyleSheet.create({
 const types = {
   secondary: StyleSheet.create({
     button: {
-      borderColor: colorGray100,
-      borderWidth: buttonBorderWidth,
-      paddingVertical: spacingMd - buttonBorderWidth,
-      paddingHorizontal: spacingBase - spacingSm - buttonBorderWidth,
+      // borderColor: colorGray100,
+      // borderWidth: buttonBorderWidth,
+      // paddingVertical: spacingMd,
+      // paddingHorizontal: spacingBase - spacingSm,
     },
     text: {
-      color: colorBlue500,
+      color: colorBlue700,
     },
   }),
   destructive: StyleSheet.create({
@@ -129,9 +131,8 @@ const modifiers = {
   }),
   iconOnlyWithBorder: StyleSheet.create({
     button: {
-      paddingVertical: spacingMd - buttonBorderWidth,
-      paddingHorizontal:
-        Platform.OS === 'android' ? spacingMd : spacingMd - buttonBorderWidth,
+      paddingVertical: spacingMd,
+      paddingHorizontal: Platform.OS === 'android' ? spacingMd : spacingMd,
     },
     icon: {
       marginStart: 0,
@@ -171,7 +172,7 @@ const gradientColors = {
   primary: [colorGreen500, colorGreen600],
   featured: [colorPink500, colorPink600],
   destructive: [colorWhite, colorWhite],
-  secondary: [colorWhite, colorWhite],
+  secondary: [colorBlue50, colorBlue100],
   disabled: [colorGray100, colorGray100],
 };
 

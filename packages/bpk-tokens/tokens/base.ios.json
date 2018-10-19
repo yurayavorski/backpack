@@ -23,7 +23,7 @@
     },
     {
       "type": "size",
-      "value": "40",
+      "value": "30",
       "category": "radii",
       "originalValue": "{!BORDER_RADIUS_PILL}",
       "name": "borderRadiusPill"
@@ -547,7 +547,7 @@
       "name": "colorYellow900"
     },
     {
-      "value": "\"System\"",
+      "value": "\"Gilroy\"",
       "type": "font",
       "category": "typesettings",
       "originalValue": "{!FONT_FAMILY}",

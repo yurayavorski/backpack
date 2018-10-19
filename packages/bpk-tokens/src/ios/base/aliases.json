@@ -4,7 +4,7 @@
     "../../common/base/colors.json"
   ],
   "aliases": {
-    "FONT_FAMILY": "\"System\"",
+    "FONT_FAMILY": "\"Gilroy\"",
     "FONT_SIZE_XS": 11,
     "FONT_SIZE_SM": 13,
     "FONT_SIZE_BASE": 15,
@@ -31,7 +31,7 @@
     "BORDER_SIZE_LG": 2,
     "BORDER_SIZE_XL": 3,
     "BORDER_RADIUS_SM": 4,
-    "BORDER_RADIUS_PILL": 40,
+    "BORDER_RADIUS_PILL": 30,
     "CAROUSEL_INDICATOR_DOT_SIZE_SM": 2,
     "CAROUSEL_INDICATOR_DOT_SIZE_MD": 4,
     "CAROUSEL_INDICATOR_DOT_SIZE_BASE": 6
