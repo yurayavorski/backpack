@@ -83,7 +83,7 @@ export default {
     const { start, end } = startAndEndFromAngle(angle);
 
     return {
-      colors: [colorGreen500, colorGreen700],
+      colors: ['#93a', '#b648c8'],
       start: { x: start[0], y: start[1] },
       end: { x: end[0], y: end[1] },
     };

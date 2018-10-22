@@ -64,13 +64,13 @@ const base = StyleSheet.create({
 const types = {
   secondary: StyleSheet.create({
     button: {
-      // borderColor: colorGray100,
-      // borderWidth: buttonBorderWidth,
-      // paddingVertical: spacingMd,
-      // paddingHorizontal: spacingBase - spacingSm,
+      borderColor: colorWhite,
+      borderWidth: buttonBorderWidth,
+      paddingVertical: spacingMd,
+      paddingHorizontal: spacingBase - spacingSm,
     },
     text: {
-      color: colorBlue700,
+      color: colorWhite,
     },
   }),
   destructive: StyleSheet.create({
@@ -172,7 +172,7 @@ const gradientColors = {
   primary: [colorGreen500, colorGreen600],
   featured: [colorPink500, colorPink600],
   destructive: [colorWhite, colorWhite],
-  secondary: [colorBlue50, colorBlue100],
+  secondary: ['rgba(255,255,255,0.25)', 'rgba(255,255,255,0.25)'],
   disabled: [colorGray100, colorGray100],
 };
 
