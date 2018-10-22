@@ -20,6 +20,8 @@
 import {
   colorBlue500,
   colorPrimaryGradientLight,
+  colorGreen500,
+  colorGreen700,
 } from 'bpk-tokens/tokens/base.react.native';
 
 const ANGLES = {
@@ -81,7 +83,7 @@ export default {
     const { start, end } = startAndEndFromAngle(angle);
 
     return {
-      colors: [colorBlue500, colorPrimaryGradientLight],
+      colors: [colorGreen500, colorGreen700],
       start: { x: start[0], y: start[1] },
       end: { x: end[0], y: end[1] },
     };
