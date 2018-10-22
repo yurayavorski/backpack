@@ -23,6 +23,7 @@ import PropTypes from 'prop-types';
 import { setOpacity } from 'bpk-tokens';
 import BpkText from 'react-native-bpk-component-text';
 import {
+  colorPink500,
   colorGray700,
   colorGray50,
   colorYellow500,
@@ -52,7 +53,8 @@ const styles = StyleSheet.create({
     backgroundColor: colorRed500,
   },
   viewLight: {
-    backgroundColor: colorGray50,
+    backgroundColor: 'transparent',
+    paddingHorizontal: spacingMd - borderSizeSm,
   },
   viewInverse: {
     backgroundColor: colorWhite,
@@ -71,11 +73,18 @@ const styles = StyleSheet.create({
   textOutline: {
     color: colorWhite,
   },
+  textLight: {
+    color: colorPink500,
+  },
   borderBase: {
     borderTopLeftRadius: borderRadiusSm,
     borderBottomLeftRadius: borderRadiusSm,
     borderTopRightRadius: borderRadiusSm,
     borderBottomRightRadius: borderRadiusSm,
+  },
+  borderLight: {
+    borderWidth: borderSizeSm,
+    borderColor: colorPink500,
   },
   borderOutline: {
     borderWidth: borderSizeSm,
@@ -124,7 +133,7 @@ const viewStyleMap: { [key: string]: Object | Array<Object> } = {
   [BADGE_TYPES.success]: styles.viewSuccess,
   [BADGE_TYPES.warning]: styles.viewWarning,
   [BADGE_TYPES.destructive]: styles.viewDestructive,
-  [BADGE_TYPES.light]: styles.viewLight,
+  [BADGE_TYPES.light]: [styles.viewLight, styles.borderLight],
   [BADGE_TYPES.inverse]: styles.viewInverse,
   [BADGE_TYPES.outline]: [styles.viewOutline, styles.borderOutline],
 };
@@ -132,6 +141,7 @@ const viewStyleMap: { [key: string]: Object | Array<Object> } = {
 const textStyleMap: { [key: string]: Object | Array<Object> } = {
   [BADGE_TYPES.destructive]: styles.textDestructive,
   [BADGE_TYPES.outline]: styles.textOutline,
+  [BADGE_TYPES.light]: styles.textLight,
 };
 
 const BpkBadge = (props: Props) => {
