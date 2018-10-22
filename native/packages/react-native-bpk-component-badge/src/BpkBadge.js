@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     backgroundColor: colorRed500,
   },
   viewLight: {
-    backgroundColor: 'transparent',
+    backgroundColor: colorGray700,
     paddingHorizontal: spacingMd - borderSizeSm,
   },
   viewInverse: {
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     backgroundColor: setOpacity(colorWhite, 0.2),
   },
   textBase: {
+    textAlign: 'center',
     color: colorGray700,
     includeFontPadding: false,
   },
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     color: colorWhite,
   },
   textLight: {
-    color: colorBlue700,
+    color: colorWhite,
   },
   borderBase: {
     borderTopLeftRadius: borderRadiusSm,
@@ -86,14 +87,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: borderRadiusSm,
     borderBottomRightRadius: borderRadiusSm,
   },
-  borderLight: {
-    borderWidth: borderSizeSm,
-    borderColor: colorBlue700,
-    borderTopLeftRadius: 30,
-    borderBottomLeftRadius: 30,
-    borderTopRightRadius: 30,
-    borderBottomRightRadius: 30,
-  },
+  borderLight: {},
   borderOutline: {
     borderWidth: borderSizeSm,
     borderColor: colorWhite,

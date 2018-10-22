@@ -154,7 +154,7 @@
       "value": "#006638"
     },
     "LINE_HEIGHT_BASE": {
-      "value": 20
+      "value": 24
     },
     "LINE_HEIGHT_LG": {
       "value": 22
@@ -886,7 +886,7 @@
       "name": "FONT_SIZE_XXL"
     },
     "LINE_HEIGHT_BASE": {
-      "value": "20",
+      "value": "24",
       "type": "size",
       "category": "typesettings",
       "originalValue": "{!LINE_HEIGHT_BASE}",
@@ -984,17 +984,17 @@
       "name": "SHADOW_SM_OFFSET_WIDTH"
     },
     "SHADOW_SM_OPACITY": {
-      "value": 0.3,
+      "value": 0.5,
       "type": "size",
       "category": "box-shadows",
-      "originalValue": 0.3,
+      "originalValue": 0.5,
       "name": "SHADOW_SM_OPACITY"
     },
     "SHADOW_SM_RADIUS": {
-      "value": 3,
+      "value": 8,
       "type": "size",
       "category": "box-shadows",
-      "originalValue": 3,
+      "originalValue": 8,
       "name": "SHADOW_SM_RADIUS"
     },
     "SHADOW_XL_COLOR": {
@@ -1096,7 +1096,7 @@
       "name": "TEXT_BASE_FONT_WEIGHT"
     },
     "TEXT_BASE_LINE_HEIGHT": {
-      "value": "20",
+      "value": "24",
       "type": "size",
       "category": "line-heights",
       "name": "TEXT_BASE_LINE_HEIGHT",

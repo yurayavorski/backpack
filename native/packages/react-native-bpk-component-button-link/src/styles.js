@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row-reverse',
   },
   text: {
-    color: colorGreen500,
+    color: '#93a',
   },
   textDisabled: {
     color: colorGray300,

@@ -79,7 +79,8 @@ const getEmphasizeProperties = () => {
   if (Platform.OS === 'android') {
     emphasizeProperties.fontFamily = fontFamilyEmphasize;
   } else {
-    emphasizeProperties.fontWeight = textEmphasizedFontWeight;
+    emphasizeProperties.fontWeight = '700';
+    emphasizeProperties.fontFamily = 'Gilroy';
   }
 
   return emphasizeProperties;
