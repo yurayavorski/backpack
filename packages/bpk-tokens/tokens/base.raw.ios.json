@@ -40,7 +40,7 @@
       "value": "#005567"
     },
     "BORDER_RADIUS_PILL": {
-      "value": 30
+      "value": 40
     },
     "BORDER_RADIUS_SM": {
       "value": 4
@@ -70,7 +70,7 @@
       "value": 15
     },
     "FONT_SIZE_LG": {
-      "value": 17
+      "value": 20
     },
     "FONT_SIZE_SM": {
       "value": 13
@@ -85,7 +85,7 @@
       "value": 34
     },
     "FONT_WEIGHT_BOLD": {
-      "value": "700"
+      "value": "bold"
     },
     "FONT_WEIGHT_NORMAL": {
       "value": "400"
@@ -313,7 +313,7 @@
     },
     "BORDER_RADIUS_PILL": {
       "type": "size",
-      "value": "30",
+      "value": "40",
       "category": "radii",
       "originalValue": "{!BORDER_RADIUS_PILL}",
       "name": "BORDER_RADIUS_PILL"
@@ -851,7 +851,7 @@
       "name": "FONT_SIZE_BASE"
     },
     "FONT_SIZE_LG": {
-      "value": "17",
+      "value": "20",
       "type": "font-size",
       "category": "typesettings",
       "originalValue": "{!FONT_SIZE_LG}",
@@ -1110,17 +1110,17 @@
       "name": "TEXT_EMPHASIZED_FONT_WEIGHT"
     },
     "TEXT_LG_FONT_SIZE": {
-      "value": "17",
+      "value": "20",
       "type": "font-size",
       "category": "font-sizes",
       "originalValue": "{!FONT_SIZE_LG}",
       "name": "TEXT_LG_FONT_SIZE"
     },
     "TEXT_LG_FONT_WEIGHT": {
-      "value": "400",
+      "value": "bold",
       "type": "string",
       "category": "font-weights",
-      "originalValue": "{!FONT_WEIGHT_NORMAL}",
+      "originalValue": "{!FONT_WEIGHT_BOLD}",
       "name": "TEXT_LG_FONT_WEIGHT"
     },
     "TEXT_LG_LINE_HEIGHT": {
@@ -1201,7 +1201,7 @@
       "name": "TEXT_XXL_FONT_SIZE"
     },
     "TEXT_XXL_FONT_WEIGHT": {
-      "value": "700",
+      "value": "bold",
       "type": "string",
       "category": "font-weights",
       "originalValue": "{!FONT_WEIGHT_BOLD}",

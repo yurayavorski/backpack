@@ -23,7 +23,7 @@
     },
     {
       "type": "size",
-      "value": "30",
+      "value": "40",
       "category": "radii",
       "originalValue": "{!BORDER_RADIUS_PILL}",
       "name": "borderRadiusPill"
@@ -561,7 +561,7 @@
       "name": "fontSizeBase"
     },
     {
-      "value": "17",
+      "value": "20",
       "type": "font-size",
       "category": "typesettings",
       "originalValue": "{!FONT_SIZE_LG}",
@@ -820,17 +820,17 @@
       "name": "textEmphasizedFontWeight"
     },
     {
-      "value": "17",
+      "value": "20",
       "type": "font-size",
       "category": "font-sizes",
       "originalValue": "{!FONT_SIZE_LG}",
       "name": "textLgFontSize"
     },
     {
-      "value": "400",
+      "value": "bold",
       "type": "string",
       "category": "font-weights",
-      "originalValue": "{!FONT_WEIGHT_NORMAL}",
+      "originalValue": "{!FONT_WEIGHT_BOLD}",
       "name": "textLgFontWeight"
     },
     {
@@ -911,7 +911,7 @@
       "name": "textXxlFontSize"
     },
     {
-      "value": "700",
+      "value": "bold",
       "type": "string",
       "category": "font-weights",
       "originalValue": "{!FONT_WEIGHT_BOLD}",

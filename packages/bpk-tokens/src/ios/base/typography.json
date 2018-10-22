@@ -128,7 +128,7 @@
       "category": "font-sizes"
     },
     "TEXT_LG_FONT_WEIGHT": {
-      "value": "{!FONT_WEIGHT_NORMAL}",
+      "value": "{!FONT_WEIGHT_BOLD}",
       "type": "string",
       "category": "font-weights"
     },

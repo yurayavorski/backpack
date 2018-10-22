@@ -27,6 +27,7 @@ import {
   colorGray700,
   colorGray50,
   colorYellow500,
+  colorBlue700,
   colorRed500,
   colorGreen500,
   colorWhite,
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   viewWarning: {
-    backgroundColor: colorYellow500,
+    backgroundColor: '#93a',
   },
   viewSuccess: {
     backgroundColor: colorGreen500,
@@ -67,6 +68,9 @@ const styles = StyleSheet.create({
     color: colorGray700,
     includeFontPadding: false,
   },
+  textWarning: {
+    color: colorWhite,
+  },
   textDestructive: {
     color: colorWhite,
   },
@@ -74,7 +78,7 @@ const styles = StyleSheet.create({
     color: colorWhite,
   },
   textLight: {
-    color: colorPink500,
+    color: colorBlue700,
   },
   borderBase: {
     borderTopLeftRadius: borderRadiusSm,
@@ -84,7 +88,11 @@ const styles = StyleSheet.create({
   },
   borderLight: {
     borderWidth: borderSizeSm,
-    borderColor: colorPink500,
+    borderColor: colorBlue700,
+    borderTopLeftRadius: 30,
+    borderBottomLeftRadius: 30,
+    borderTopRightRadius: 30,
+    borderBottomRightRadius: 30,
   },
   borderOutline: {
     borderWidth: borderSizeSm,
@@ -142,6 +150,7 @@ const textStyleMap: { [key: string]: Object | Array<Object> } = {
   [BADGE_TYPES.destructive]: styles.textDestructive,
   [BADGE_TYPES.outline]: styles.textOutline,
   [BADGE_TYPES.light]: styles.textLight,
+  [BADGE_TYPES.warning]: styles.textWarning,
 };
 
 const BpkBadge = (props: Props) => {
