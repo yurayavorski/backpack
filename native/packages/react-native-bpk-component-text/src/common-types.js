@@ -25,7 +25,7 @@ import { StyleSheet, type StyleObj } from 'react-native';
 
 const emphasizePropType = deprecate(
   PropTypes.bool,
-  'The `emphasize` prop is deprectiated. Please use the `weight` prop instead.',
+  'The `emphasize` prop is deprecated. Please use the `weight` prop instead.',
 );
 
 export const TEXT_STYLES = [

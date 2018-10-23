@@ -150,7 +150,10 @@ const BpkText = (props: Props) => {
     ...rest
   } = props;
 
-  const style = [styles[textStyle], getEmphasizeProperties(weight)];
+  const style = [
+    styles[textStyle],
+    getEmphasizeProperties(emphasize ? 'emphasized' : weight),
+  ];
 
   if (userStyle) {
     style.push(userStyle);
