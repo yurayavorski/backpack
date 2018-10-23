@@ -48,7 +48,8 @@ try {
 
   const isAffectedRNVersion = major === 0 && minor === 55;
 
-  shouldApplyFontWeightFix = isAffectedRNVersion && IOS_VERSION === 11;
+  shouldApplyFontWeightFix =
+    isAffectedRNVersion && (IOS_VERSION === 11 || IOS_VERSION === 12);
 } catch (e) {
   // do nothing
 }

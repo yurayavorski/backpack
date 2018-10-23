@@ -85,6 +85,19 @@ storiesOf('react-native-bpk-component-text', module)
       </BpkText>
     </View>
   ))
+  .add('docs:heavy', () => (
+    <View>
+      <BpkText textStyle="xxxl" weight="heavy">
+        Flights to Edinburgh
+      </BpkText>
+      <BpkText textStyle="xxl" weight="heavy">
+        Flights to Edinburgh
+      </BpkText>
+      <BpkText textStyle="xl" weight="heavy">
+        Flights to Edinburgh
+      </BpkText>
+    </View>
+  ))
   .add('Colours', () => (
     <View>
       <BpkText textStyle="xxxl" style={{ color: colorBlue700 }}>

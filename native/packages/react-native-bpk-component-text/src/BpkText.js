@@ -23,7 +23,9 @@ import {
   colorGray700,
   fontFamily,
   fontFamilyEmphasize,
+  fontFamilyHeavy,
   textEmphasizedFontWeight,
+  textHeavyFontWeight,
   letterSpacingCaps,
   textCapsFontSize,
   textCapsFontWeight,
@@ -96,17 +98,32 @@ const getStyleByTextStyle = textStyle => {
     fontFamily,
     fontSize,
     fontWeight,
-    includeFontPadding: false,
   };
 };
 
-const getEmphasizeProperties = () => {
+const getEmphasizeProperties = weight => {
   const emphasizeProperties = {};
 
   if (Platform.OS === 'android') {
-    emphasizeProperties.fontFamily = fontFamilyEmphasize;
+    if (weight === 'emphasized') {
+      emphasizeProperties.fontFamily = fontFamilyEmphasize;
+    } else if (weight === 'heavy') {
+      emphasizeProperties.fontFamily = fontFamilyHeavy;
+    }
   } else {
-    emphasizeProperties.fontWeight = textEmphasizedFontWeight;
+    if (weight === 'emphasized') {
+      emphasizeProperties.fontWeight = textEmphasizedFontWeight;
+    } else if (weight === 'heavy') {
+      emphasizeProperties.fontWeight = textHeavyFontWeight;
+    }
+  }
+
+  if (shouldApplyFontWeightFix) {
+    if (weight === 'emphasized') {
+      emphasizeProperties.fontWeight = '700';
+    } else if (weight === 'heavy') {
+      emphasizeProperties.fontWeight = '900';
+    }
   }
 
   return emphasizeProperties;
@@ -133,14 +150,7 @@ const BpkText = (props: Props) => {
     ...rest
   } = props;
 
-  const style = [styles[textStyle]];
-  // Emphasize on iOS is not supported for the XXL size. This is also checked with
-  // the `emphasizePropType` prop.
-  style.push(getEmphasizeProperties(weight));
-
-  if (shouldApplyFontWeightFix && weight !== 'regular') {
-    style.push({ fontWeight: '800' });
-  }
+  const style = [styles[textStyle], getEmphasizeProperties(weight)];
 
   if (userStyle) {
     style.push(userStyle);
