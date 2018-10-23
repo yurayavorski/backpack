@@ -666,62 +666,6 @@
       "name": "letterSpacingXxxl"
     },
     {
-      "value": "21",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_BASE}",
-      "name": "lineHeightBase"
-    },
-    {
-      "value": "13",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_CAPS}",
-      "name": "lineHeightCaps"
-    },
-    {
-      "value": "26",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_LG}",
-      "name": "lineHeightLg"
-    },
-    {
-      "value": "18",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_SM}",
-      "name": "lineHeightSm"
-    },
-    {
-      "value": "31",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XL}",
-      "name": "lineHeightXl"
-    },
-    {
-      "value": "16",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XS}",
-      "name": "lineHeightXs"
-    },
-    {
-      "value": "47",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XXL}",
-      "name": "lineHeightXxl"
-    },
-    {
-      "value": "55",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XXXL}",
-      "name": "lineHeightXxxl"
-    },
-    {
       "value": "#252033ff",
       "type": "color",
       "category": "box-shadows",
@@ -897,41 +841,6 @@
       "name": "textBaseLetterSpacing"
     },
     {
-      "value": "21",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_BASE}",
-      "name": "textBaseLineHeight"
-    },
-    {
-      "value": "10",
-      "type": "font-size",
-      "category": "font-sizes",
-      "originalValue": "{!FONT_SIZE_CAPS}",
-      "name": "textCapsFontSize"
-    },
-    {
-      "value": "400",
-      "type": "string",
-      "category": "font-weights",
-      "originalValue": "{!FONT_WEIGHT_NORMAL}",
-      "name": "textCapsFontWeight"
-    },
-    {
-      "value": 0.28,
-      "type": "letter-spacing",
-      "category": "letter-spacings",
-      "originalValue": "{!LETTER_SPACING_CAPS}",
-      "name": "textCapsLetterSpacing"
-    },
-    {
-      "value": "13",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_CAPS}",
-      "name": "textCapsLineHeight"
-    },
-    {
       "value": "600",
       "type": "string",
       "category": "font-weights",
@@ -960,13 +869,6 @@
       "name": "textLgLetterSpacing"
     },
     {
-      "value": "26",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_LG}",
-      "name": "textLgLineHeight"
-    },
-    {
       "value": "14",
       "type": "font-size",
       "category": "font-sizes",
@@ -986,13 +888,6 @@
       "category": "letter-spacings",
       "originalValue": "{!LETTER_SPACING_SM}",
       "name": "textSmLetterSpacing"
-    },
-    {
-      "value": "18",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_SM}",
-      "name": "textSmLineHeight"
     },
     {
       "value": "24",
@@ -1016,13 +911,6 @@
       "name": "textXlLetterSpacing"
     },
     {
-      "value": "31",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XL}",
-      "name": "textXlLineHeight"
-    },
-    {
       "value": "12",
       "type": "font-size",
       "category": "font-sizes",
@@ -1042,13 +930,6 @@
       "category": "letter-spacings",
       "originalValue": "{!LETTER_SPACING_XS}",
       "name": "textXsLetterSpacing"
-    },
-    {
-      "value": "16",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XS}",
-      "name": "textXsLineHeight"
     },
     {
       "value": "36",
@@ -1072,13 +953,6 @@
       "name": "textXxlLetterSpacing"
     },
     {
-      "value": "47",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XXL}",
-      "name": "textXxlLineHeight"
-    },
-    {
       "value": "42",
       "type": "font-size",
       "category": "font-sizes",
@@ -1098,13 +972,6 @@
       "category": "letter-spacings",
       "originalValue": "{!LETTER_SPACING_XXXL}",
       "name": "textXxxlLetterSpacing"
-    },
-    {
-      "value": "55",
-      "type": "size",
-      "category": "line-heights",
-      "originalValue": "{!LINE_HEIGHT_XXXL}",
-      "name": "textXxxlLineHeight"
     },
     {
       "category": "touchables",
